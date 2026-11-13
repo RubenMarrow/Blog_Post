@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Django Blog</h1>
+
+<ul>
+    {% for post in posts %}
+        <li>
+            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+            <sublist>{{ post.author }}</sublist>
+        </li>
+    {% empty %}
+        <li>No posts yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

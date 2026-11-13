@@ -1,0 +1,13 @@
+header h1 a {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20;
+}
+
+sublist {
+    margin: 40
+}
